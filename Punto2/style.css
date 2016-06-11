@@ -1,0 +1,84 @@
+#logo{
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: "Roboto", "Roboto", Roboto, sans-serif;
+}
+nav {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    transition: all 0.2s;
+}
+
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+section{
+	width: 55%;
+	margin: 3%;
+	float: left;	
+}
+
+aside{
+	width: 25%;
+	margin: 3%;
+	float: right;	
+}
+
+/* === Remove input autofocus webkit === */ 
+*:focus { 
+	outline: none; 
+}
+/*Estilos a los elementos de lista para crear un poco de estructura*/
+.contact_form ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:12px; 
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+/*Estilizando la sección de encabezado de nuestro formulario. Estos incluye la etiqueta del encabezado y la notificación que informa usuarios que el asterisco (*) indica campos requeridos.*/
+.contact_form h2 {
+    margin:0;
+    display: inline;
+}
+
+.required_notification {
+    color:#d45252; 
+    margin:5px 0 0 0; 
+    display:inline;
+    float:right;
+}
+ 
+ 
+ 

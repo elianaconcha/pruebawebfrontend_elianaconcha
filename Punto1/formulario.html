@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="iso-8859-1">
+	<meta name="description" content="Turismo">
+	<meta name="keywords" content="Turismo">
+	<link href="style.css" rel="stylesheet" />	
+</head>
+<body>
+	<form class="contact_form" action="#" id="contact_form" runat="server"> 
+		<div> 
+			<ul> 
+				<li> 
+					<h2>Contacto</h2> 
+					<span class="required_notification">* Datos requeridos</span>
+				</li>
+				<li>
+					<label for="name">Nombre:</label> <input type="text" placeholder="Eliana Concha" required /> 
+				</li> 
+				<li> 
+					<label for="email">Correo:</label> <input type="email" name="email" placeholder="eliana.concha@seratic.com" required /> 
+					<span class="form_hint">Formato correcto: "name@something.com"</span> 
+				</li> 
+				<li> 
+				<label>Sexo:</label>            
+				<label>
+					<input type="radio" name="sexo" value="masculino"> Masculino
+				</label>
+				<label>
+					<input type="radio" name="sexo" value="femenino"> Femenino
+				</label>
+				<label>
+					<input type="radio" name="sexo" value="otro"> Otro
+				</label>      
+					
+				</li> 
+				<li> 
+					<label for="message">Mensaje:</label> 
+					<textarea name="message" cols="40" rows="6" required></textarea> 
+				</li>
+				<li> 
+					<button class="submit" type="submit" value="Go" onClick="updateTxt('name', 'email')">Enviar</button> 
+				</li>
+			</ul>
+		</div>
+	</form>	
+	
+		<script>
+			function updateTxt(field1,field2)
+			{  
+			var field1 = document.getElementById(field1).value;  
+			var field2 = document.getElementById(field2).value;  
+			//alert(field1 + '\n' + field2);
+			alert("Hello\nHow are you?");
+			}  
+		</script>
+	</body>
+</html>
+
